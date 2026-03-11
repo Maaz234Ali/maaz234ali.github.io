@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Maaz Ali | Portfolio</title>
+
 <link rel="stylesheet" href="style.css">
 
-<!-- Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
 <body>
 
+
 <header>
 
-<nav>
-<h2 class="logo">Maaz</h2>
+<nav class="navbar">
 
-<ul>
+<h2 class="logo">Maaz.</h2>
+
+<ul class="nav-links">
+
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
 <li><a href="#skills">Skills</a></li>
 <li><a href="#projects">Projects</a></li>
 <li><a href="#contact">Contact</a></li>
+
 </ul>
 
 </nav>
@@ -31,34 +37,46 @@
 </header>
 
 
+
 <section id="home" class="hero">
 
-<div class="hero-text">
+<div class="overlay"></div>
+
+<div class="hero-content">
 
 <h1>Hi, I'm <span>Maaz Ali</span></h1>
 
-<h3>AI Developer | Data Scientist</h3>
+<h3>AI Developer • Data Scientist • Flutter Developer</h3>
 
-<p>I build intelligent systems, AI models and modern applications.</p>
+<p>
+Building intelligent systems, AI models and modern applications.
+</p>
+
+<div class="hero-buttons">
 
 <a href="#projects" class="btn">View Projects</a>
 
+<a href="#contact" class="btn-outline">Contact Me</a>
+
 </div>
 
-<div class="hero-img">
-<img src="profile.jpg" alt="profile">
 </div>
 
 </section>
 
 
+
 <section id="about">
 
-<h2>About Me</h2>
+<h2 class="section-title">About Me</h2>
 
-<p>
-I am an AI Developer passionate about machine learning,
-deep learning and building intelligent applications.
+<p class="about-text">
+
+I am an AI developer passionate about building intelligent
+applications using machine learning and deep learning.
+I enjoy solving real world problems using AI, data science
+and modern software technologies.
+
 </p>
 
 </section>
@@ -67,16 +85,39 @@ deep learning and building intelligent applications.
 
 <section id="skills">
 
-<h2>Skills</h2>
+<h2 class="section-title">Skills</h2>
 
-<div class="skills-grid">
+<div class="skills-container">
 
-<div class="skill"><i class="fab fa-python"></i>Python</div>
-<div class="skill"><i class="fas fa-brain"></i>Machine Learning</div>
-<div class="skill"><i class="fas fa-robot"></i>Deep Learning</div>
-<div class="skill"><i class="fab fa-github"></i>GitHub</div>
-<div class="skill"><i class="fas fa-code"></i>FastAPI</div>
-<div class="skill"><i class="fas fa-mobile"></i>Flutter</div>
+<div class="skill">
+<i class="fab fa-python"></i>
+<p>Python</p>
+</div>
+
+<div class="skill">
+<i class="fas fa-brain"></i>
+<p>Machine Learning</p>
+</div>
+
+<div class="skill">
+<i class="fas fa-robot"></i>
+<p>Deep Learning</p>
+</div>
+
+<div class="skill">
+<i class="fas fa-code"></i>
+<p>FastAPI</p>
+</div>
+
+<div class="skill">
+<i class="fab fa-github"></i>
+<p>GitHub</p>
+</div>
+
+<div class="skill">
+<i class="fas fa-mobile"></i>
+<p>Flutter</p>
+</div>
 
 </div>
 
@@ -86,41 +127,60 @@ deep learning and building intelligent applications.
 
 <section id="projects">
 
-<h2>Projects</h2>
+<h2 class="section-title">Projects</h2>
 
-<div class="project-container">
+<div class="projects-grid">
 
-<div class="project">
+
+<div class="project-card">
+
+<img src="https://picsum.photos/400/250" class="project-img">
 
 <h3>Medical Report AI Analyzer</h3>
 
-<p>AI system that extracts and summarizes medical reports.</p>
+<p>
+AI system that extracts text from medical reports
+and generates intelligent summaries.
+</p>
 
-<a href="#">GitHub</a>
+<a href="#" class="project-btn">View</a>
 
 </div>
 
 
-<div class="project">
+
+<div class="project-card">
+
+<img src="https://picsum.photos/401/250" class="project-img">
 
 <h3>Street Fighter AI Bot</h3>
 
-<p>Neural network trained to play Street Fighter II.</p>
+<p>
+Neural network trained to play Street Fighter II
+using reinforcement learning.
+</p>
 
-<a href="#">GitHub</a>
+<a href="#" class="project-btn">View</a>
+
+</div>
+
+
+
+<div class="project-card">
+
+<img src="https://picsum.photos/402/250" class="project-img">
+
+<h3>Flutter Medical App</h3>
+
+<p>
+Mobile application for medical report management
+and AI summary generation.
+</p>
+
+<a href="#" class="project-btn">View</a>
 
 </div>
 
-
-<div class="project">
-
-<h3>Portfolio Website</h3>
-
-<p>Modern responsive portfolio with animations.</p>
-
-<a href="#">GitHub</a>
-
-</div>
 
 </div>
 
@@ -130,21 +190,37 @@ deep learning and building intelligent applications.
 
 <section id="contact">
 
-<h2>Contact</h2>
+<h2 class="section-title">Contact</h2>
 
-<p>Email: maaz@example.com</p>
+<p class="contact-text">
 
-<div class="social">
+Let's build something amazing together.
+
+</p>
+
+<div class="social-icons">
 
 <a href="#"><i class="fab fa-github"></i></a>
+
 <a href="#"><i class="fab fa-linkedin"></i></a>
+
+<a href="#"><i class="fas fa-envelope"></i></a>
 
 </div>
 
 </section>
 
 
+
+<footer>
+
+<p>© 2026 Maaz Ali</p>
+
+</footer>
+
+
 <script src="script.js"></script>
 
 </body>
+
 </html>
