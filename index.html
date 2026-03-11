@@ -1,94 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Maaz Ali Khan | Portfolio</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maaz Ali Khan | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
-
 <body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">MaazAli</a>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="hero">
+        <div class="container">
+            <h1>Maaz Ali Khan</h1>
+            <p class="tagline">Web &amp; App Developer &middot; Data Analyst &middot; AI Enthusiast</p>
+        </div>
+    </header>
 
-<header>
-<h1>Maaz Ali Khan</h1>
-<p>Web & App Developer | Data Analyst | AI Enthusiast</p>
-</header>
-
-<section id="about">
-<h2>About Me</h2>
-<p>
-I am a Data Science student at FAST University Islamabad with strong skills in 
-AI development, data analysis, and full-stack web/app development. 
-I enjoy building intelligent systems that solve real-world problems.
-</p>
+<section id="about" class="section about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>
+            I am a Data Science student at FAST University Islamabad with strong skills in
+            AI development, data analysis, and full‑stack web/app development.
+            I enjoy building intelligent systems that solve real‑world problems.
+        </p>
+    </div>
 </section>
 
-<section id="skills">
-<h2>Skills</h2>
-
-<ul>
-<li>Python</li>
-<li>C++</li>
-<li>SQL</li>
-<li>Dart</li>
-<li>Flutter</li>
-<li>FastAPI</li>
-<li>OpenCV</li>
-<li>Machine Learning</li>
-<li>Data Visualization</li>
-</ul>
-
+<section id="skills" class="section skills">
+    <div class="container">
+        <h2>Skills</h2>
+        <ul class="skill-list">
+            <li>Python</li>
+            <li>C++</li>
+            <li>SQL</li>
+            <li>Dart &amp; Flutter</li>
+            <li>FastAPI</li>
+            <li>OpenCV</li>
+            <li>Machine Learning</li>
+            <li>Data Visualization</li>
+        </ul>
+    </div>
 </section>
 
-<section id="projects">
-
-<h2>Projects</h2>
-
-<div class="project">
-<h3>PMP Medical Portal</h3>
-<p>AI-powered health report analysis platform with medical summary generation.</p>
-</div>
-
-<div class="project">
-<h3>Street Fighter AI Bot</h3>
-<p>Neural network trained AI agent to predict opponent moves.</p>
-</div>
-
-<div class="project">
-<h3>AIDS Data Visualization Dashboard</h3>
-<p>Visual analysis of global AIDS data using graphs, heatmaps and maps.</p>
-</div>
-
+<section id="projects" class="section projects">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>PMP Medical Portal</h3>
+            <p>AI-powered health report analysis platform with medical summary generation.</p>
+        </div>
+        <div class="project">
+            <h3>Street Fighter AI Bot</h3>
+            <p>Neural network trained AI agent to predict opponent moves.</p>
+        </div>
+        <div class="project">
+            <h3>AIDS Data Visualization Dashboard</h3>
+            <p>Visual analysis of global AIDS data using graphs, heatmaps and maps.</p>
+        </div>
+    </div>
 </section>
 
-<section id="experience">
-<h2>Experience</h2>
-
-<p>
-Internee App Developer – PMP Medical Portal
-</p>
-
-<p>
-Freelance Web Developer – Built websites like mymrai.com, sitpak.com, enccharters.com
-</p>
-
+<section id="experience" class="section experience">
+    <div class="container">
+        <h2>Experience</h2>
+        <p>Internee App Developer – PMP Medical Portal</p>
+        <p>Freelance Web Developer – Built websites like mymrai.com, sitpak.com, enccharters.com</p>
+    </div>
 </section>
 
-<section id="contact">
-
-<h2>Contact</h2>
-
-<p>Email: maaz18304@gmail.com</p>
-
-<p>Phone: +92 346 3631342</p>
-
-<p>
-<a href="https://github.com/Maaz234Ali">GitHub</a>
-</p>
-
-<p>
-<a href="https://www.linkedin.com/in/maaz-ali-945897268/">LinkedIn</a>
-</p>
-
+<section id="contact" class="section contact">
+    <div class="container">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:maaz18304@gmail.com">maaz18304@gmail.com</a></p>
+        <p>Phone: <a href="tel:+923463631342">+92 346 3631342</a></p>
+        <p><a href="https://github.com/Maaz234Ali" target="_blank" rel="noopener">GitHub</a></p>
+        <p><a href="https://www.linkedin.com/in/maaz-ali-945897268/" target="_blank" rel="noopener">LinkedIn</a></p>
+    </div>
 </section>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2026 Maaz Ali Khan. All rights reserved.</p>
+    </div>
+</footer>
 
 </body>
 </html>
