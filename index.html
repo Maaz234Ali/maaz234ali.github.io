@@ -1,226 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maaz Ali | Portfolio</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Maaz Ali | Portfolio</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
-
-<header>
-
-<nav class="navbar">
-
-<h2 class="logo">Maaz.</h2>
-
-<ul class="nav-links">
-
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-</nav>
-
-</header>
-
-
-
-<section id="home" class="hero">
-
-<div class="overlay"></div>
-
-<div class="hero-content">
-
-<h1>Hi, I'm <span>Maaz Ali</span></h1>
-
-<h3>AI Developer • Data Scientist • Flutter Developer</h3>
-
-<p>
-Building intelligent systems, AI models and modern applications.
-</p>
-
-<div class="hero-buttons">
-
-<a href="#projects" class="btn">View Projects</a>
-
-<a href="#contact" class="btn-outline">Contact Me</a>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<section id="about">
-
-<h2 class="section-title">About Me</h2>
-
-<p class="about-text">
-
-I am an AI developer passionate about building intelligent
-applications using machine learning and deep learning.
-I enjoy solving real world problems using AI, data science
-and modern software technologies.
-
-</p>
-
-</section>
-
-
-
-<section id="skills">
-
-<h2 class="section-title">Skills</h2>
-
-<div class="skills-container">
-
-<div class="skill">
-<i class="fab fa-python"></i>
-<p>Python</p>
-</div>
-
-<div class="skill">
-<i class="fas fa-brain"></i>
-<p>Machine Learning</p>
-</div>
-
-<div class="skill">
-<i class="fas fa-robot"></i>
-<p>Deep Learning</p>
-</div>
-
-<div class="skill">
-<i class="fas fa-code"></i>
-<p>FastAPI</p>
-</div>
-
-<div class="skill">
-<i class="fab fa-github"></i>
-<p>GitHub</p>
-</div>
-
-<div class="skill">
-<i class="fas fa-mobile"></i>
-<p>Flutter</p>
-</div>
-
-</div>
-
-</section>
-
-
-
-<section id="projects">
-
-<h2 class="section-title">Projects</h2>
-
-<div class="projects-grid">
-
-
-<div class="project-card">
-
-<img src="https://picsum.photos/400/250" class="project-img">
-
-<h3>Medical Report AI Analyzer</h3>
-
-<p>
-AI system that extracts text from medical reports
-and generates intelligent summaries.
-</p>
-
-<a href="#" class="project-btn">View</a>
-
-</div>
-
-
-
-<div class="project-card">
-
-<img src="https://picsum.photos/401/250" class="project-img">
-
-<h3>Street Fighter AI Bot</h3>
-
-<p>
-Neural network trained to play Street Fighter II
-using reinforcement learning.
-</p>
-
-<a href="#" class="project-btn">View</a>
-
-</div>
-
-
-
-<div class="project-card">
-
-<img src="https://picsum.photos/402/250" class="project-img">
-
-<h3>Flutter Medical App</h3>
-
-<p>
-Mobile application for medical report management
-and AI summary generation.
-</p>
-
-<a href="#" class="project-btn">View</a>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-<section id="contact">
-
-<h2 class="section-title">Contact</h2>
-
-<p class="contact-text">
-
-Let's build something amazing together.
-
-</p>
-
-<div class="social-icons">
-
-<a href="#"><i class="fab fa-github"></i></a>
-
-<a href="#"><i class="fab fa-linkedin"></i></a>
-
-<a href="#"><i class="fas fa-envelope"></i></a>
-
-</div>
-
-</section>
-
-
-
-<footer>
-
-<p>© 2026 Maaz Ali</p>
-
-</footer>
-
-
-<script src="script.js"></script>
-
+  <!-- Animated background layers -->
+  <div class="bg-gradient"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-orbit orbit-1"></div>
+  <div class="bg-orbit orbit-2"></div>
+
+  <header>
+    <nav class="navbar">
+      <div class="nav-left">
+        <h2 class="logo">
+          <span class="logo-bracket">&lt;</span>
+          Maaz
+          <span class="logo-dot">.</span>
+          <span class="logo-bracket">/&gt;</span>
+        </h2>
+        <span class="nav-tagline">AI • ML • Flutter</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="overlay"></div>
+
+      <div class="hero-inner">
+        <div class="hero-content" data-reveal="up">
+          <p class="hero-label">// welcome to my universe</p>
+          <h1>
+            Hi, I'm
+            <span class="hero-name">Maaz&nbsp;Ali</span>
+          </h1>
+
+          <h3 class="hero-roles">
+            <span class="code-tag">&lt;role&gt;</span>
+            <span class="typing" data-typing='["AI Developer","Data Scientist","Flutter Developer","ML Engineer"]'></span>
+            <span class="cursor"></span>
+            <span class="code-tag">&lt;/role&gt;</span>
+          </h3>
+
+          <p class="hero-text">
+            Building intelligent systems, AI models, and modern applications with a strong focus on clean code,
+            performance and delightful developer experience.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-terminal"></i>
+              View Projects
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              <i class="fas fa-paper-plane"></i>
+              Contact Me
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="meta-pill">
+              <span class="dot online"></span>
+              <span>Available for freelance &amp; remote roles</span>
+            </div>
+            <div class="meta-pill">
+              <i class="fas fa-location-dot"></i>
+              <span>Based on Planet Code 🌌</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-terminal" data-reveal="left">
+          <div class="terminal-header">
+            <div class="dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="terminal-title">maaz@portfolio:~</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="terminal-prompt">$</span> whoami</p>
+            <p class="terminal-answer">AI Developer | Data Scientist | Flutter Enthusiast</p>
+            <p><span class="terminal-prompt">$</span> skills --top</p>
+            <p class="terminal-answer">Python · Machine Learning · Deep Learning · FastAPI · Flutter · GitHub</p>
+            <p><span class="terminal-prompt">$</span> status</p>
+            <p class="terminal-answer status-pill">shipping pixel-perfect intelligent experiences 🚀</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-header" data-reveal="up">
+        <p class="section-label">// about</p>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="section-grid about-grid">
+        <div class="card card-glass" data-reveal="right">
+          <p class="about-text">
+            I am an AI developer passionate about building intelligent applications using machine learning and deep
+            learning.
+            I enjoy solving real-world problems with data, scalable backends and beautifully crafted interfaces.
+          </p>
+          <p class="about-text">
+            My work lives at the intersection of
+            <span class="highlight">AI research</span>,
+            <span class="highlight">developer tools</span> and
+            <span class="highlight">product design</span> — turning complex systems into simple, delightful experiences.
+          </p>
+        </div>
+
+        <div class="card card-stack" data-reveal="left">
+          <div class="stack-item">
+            <span class="stack-label">Current focus</span>
+            <span class="stack-value">AI systems · LLMs · Generative AI</span>
+          </div>
+          <div class="stack-item">
+            <span class="stack-label">Stack</span>
+            <span class="stack-value">Python, FastAPI, Flutter, TensorFlow / PyTorch</span>
+          </div>
+          <div class="stack-item">
+            <span class="stack-label">Mindset</span>
+            <span class="stack-value">ship fast, learn faster, keep it clean</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-header" data-reveal="up">
+        <p class="section-label">// skills</p>
+        <h2 class="section-title">Tech Arsenal</h2>
+      </div>
+
+      <div class="skills-container">
+        <div class="skill" data-reveal="scale">
+          <div class="skill-icon">
+            <i class="fab fa-python"></i>
+          </div>
+          <p>Python</p>
+        </div>
+
+        <div class="skill" data-reveal="scale">
+          <div class="skill-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <p>Machine Learning</p>
+        </div>
+
+        <div class="skill" data-reveal="scale">
+          <div class="skill-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <p>Deep Learning</p>
+        </div>
+
+        <div class="skill" data-reveal="scale">
+          <div class="skill-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <p>FastAPI</p>
+        </div>
+
+        <div class="skill" data-reveal="scale">
+          <div class="skill-icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <p>GitHub</p>
+        </div>
+
+        <div class="skill" data-reveal="scale">
+          <div class="skill-icon">
+            <i class="fas fa-mobile"></i>
+          </div>
+          <p>Flutter</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-header" data-reveal="up">
+        <p class="section-label">// projects</p>
+        <h2 class="section-title">Selected Work</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card" data-reveal="up">
+          <div class="project-badge">AI · NLP</div>
+          <div class="project-img-wrap">
+            <img src="https://picsum.photos/seed/medical-ai/400/250" class="project-img" alt="Medical AI Analyzer preview" />
+            <div class="project-glow"></div>
+          </div>
+          <h3>Medical Report AI Analyzer</h3>
+          <p>
+            AI system that extracts text from medical reports, understands clinical entities and generates
+            human-readable summaries to support doctors and patients.
+          </p>
+          <div class="project-meta">
+            <span>Python</span>
+            <span>Transformers</span>
+            <span>FastAPI</span>
+          </div>
+          <a href="#" class="project-btn">
+            <i class="fas fa-arrow-right"></i>
+            View details
+          </a>
+        </article>
+
+        <article class="project-card" data-reveal="up">
+          <div class="project-badge">Reinforcement Learning</div>
+          <div class="project-img-wrap">
+            <img src="https://picsum.photos/seed/street-fighter/401/250" class="project-img"
+              alt="Street Fighter AI Bot preview" />
+            <div class="project-glow"></div>
+          </div>
+          <h3>Street Fighter AI Bot</h3>
+          <p>
+            Neural network trained with reinforcement learning to play Street Fighter II, learning combos, timing and
+            strategies directly from game frames.
+          </p>
+          <div class="project-meta">
+            <span>PyTorch</span>
+            <span>RL</span>
+            <span>OpenAI Gym</span>
+          </div>
+          <a href="#" class="project-btn">
+            <i class="fas fa-arrow-right"></i>
+            View details
+          </a>
+        </article>
+
+        <article class="project-card" data-reveal="up">
+          <div class="project-badge">Flutter · AI</div>
+          <div class="project-img-wrap">
+            <img src="https://picsum.photos/seed/flutter-med/402/250" class="project-img"
+              alt="Flutter medical app preview" />
+            <div class="project-glow"></div>
+          </div>
+          <h3>Flutter Medical App</h3>
+          <p>
+            Cross-platform mobile app for medical report management with integrated AI-based summarization and secure
+            patient data handling.
+          </p>
+          <div class="project-meta">
+            <span>Flutter</span>
+            <span>Dart</span>
+            <span>REST APIs</span>
+          </div>
+          <a href="#" class="project-btn">
+            <i class="fas fa-arrow-right"></i>
+            View details
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-header" data-reveal="up">
+        <p class="section-label">// contact</p>
+        <h2 class="section-title">Let's Build Something</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="card card-glass" data-reveal="right">
+          <p class="contact-text">
+            Have an idea, a product, or a dataset you'd like to bring to life?
+            I'm always excited to collaborate on AI-powered products, tools and experiences.
+          </p>
+          <p class="contact-text">
+            Drop me a message and let's architect something remarkable together.
+          </p>
+        </div>
+
+        <div class="card contact-card" data-reveal="left">
+          <div class="social-icons">
+            <a href="#" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          <div class="contact-meta">
+            <span class="meta-pill">
+              <i class="fas fa-clock"></i>
+              <span>Responds within 24 hours</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Maaz Ali · Crafted with clean code &amp; caffeine</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
+
