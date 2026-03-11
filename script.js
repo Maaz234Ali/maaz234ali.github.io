@@ -53,3 +53,40 @@ function type() {
 }
 
 if (tagline) type();
+
+// reveal sections on scroll
+const sections = document.querySelectorAll('.section');
+const revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.2 });
+sections.forEach(sec => revealObserver.observe(sec));
+
+// animate counters when in view
+const counters = document.querySelectorAll('.counter');
+const counterObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const counter = entry.target;
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const inc = target / 200;
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + inc);
+                    setTimeout(updateCount, 20);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            updateCount();
+            counterObserver.unobserve(counter);
+        }
+    });
+}, { threshold: 1 });
+
+counters.forEach(counter => counterObserver.observe(counter));

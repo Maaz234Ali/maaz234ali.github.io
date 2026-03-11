@@ -156,7 +156,117 @@ body {
 }
 
 .projects .project:hover {
-    transform: translateY(-4px);
+    transform: translateY(-4px) scale(1.02);
+}
+
+/* glassmorphism utility class */
+.glass {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* section reveal animation */
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* stats layout */
+.stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.stat {
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 15px;
+    width: 150px;
+}
+
+.counter {
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+/* button styles */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    font-weight: 600;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    background: var(--primary);
+    transform: translateX(-50%);
+    transition: width 0.3s;
+    z-index: -1;
+}
+.btn:hover {
+    color: var(--bg);
+}
+.btn:hover::after {
+    width: 120%;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+/* hero background and overlay */
+.hero {
+    position: relative;
+    background: url('https://source.unsplash.com/1600x900/?data,science') center/cover no-repeat;
+    color: #fff;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(15,23,42,0.6);
+    backdrop-filter: blur(2px);
+}
+.hero-overlay {
+    position: absolute;
+    top:0;left:0;right:0;bottom:0;
+}
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* responsive adjustments for project images */
+.projects .project img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
 }
 
 .contact a {

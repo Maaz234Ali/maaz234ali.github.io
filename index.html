@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maaz Ali Khan | Portfolio</title>
+    <!-- font awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p5Kw5Bj8dm+eOZxxKT+6xQdVgC3Kmrw1qXUS5FDH558p0Qv+fPZccWRzvAaBzYzY2Dbrw+X4FvVYfF12/7rU2w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">MaazAli</a>
+            <a href="#" class="logo"><i class="fas fa-robot"></i> MaazAli</a>
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
             </button>
@@ -24,9 +26,11 @@
         </div>
     </nav>
     <header class="hero">
+        <div class="hero-overlay"></div>
         <div class="container">
-            <h1>Maaz Ali Khan</h1>
-            <p class="tagline">Web &amp; App Developer &middot; Data Analyst &middot; AI Enthusiast</p>
+            <h1 class="animate__animated animate__fadeInDown">Maaz Ali Khan</h1>
+            <p class="tagline animate__animated animate__fadeInUp">Web &amp; App Developer &middot; Data Analyst &middot; AI Enthusiast</p>
+            <a href="#projects" class="btn animate__animated animate__pulse animate__infinite">See Work</a>
         </div>
     </header>
 
@@ -60,17 +64,23 @@
 <section id="projects" class="section projects">
     <div class="container">
         <h2>Projects</h2>
-        <div class="project">
+        <div class="project glass">
+            <img src="https://source.unsplash.com/400x250/?health,ai" alt="PMP Medical Portal">
             <h3>PMP Medical Portal</h3>
             <p>AI-powered health report analysis platform with medical summary generation.</p>
+            <a href="#" class="btn">View Project</a>
         </div>
-        <div class="project">
+        <div class="project glass">
+            <img src="https://source.unsplash.com/400x250/?game,ai" alt="Street Fighter AI Bot">
             <h3>Street Fighter AI Bot</h3>
             <p>Neural network trained AI agent to predict opponent moves.</p>
+            <a href="#" class="btn">View Project</a>
         </div>
-        <div class="project">
+        <div class="project glass">
+            <img src="https://source.unsplash.com/400x250/?data,visualization" alt="AIDS Data Visualization Dashboard">
             <h3>AIDS Data Visualization Dashboard</h3>
             <p>Visual analysis of global AIDS data using graphs, heatmaps and maps.</p>
+            <a href="#" class="btn">View Project</a>
         </div>
     </div>
 </section>
@@ -83,13 +93,33 @@
     </div>
 </section>
 
+<section id="stats" class="section stats">
+    <div class="container stats-container">
+        <div class="stat glass">
+            <h3 class="counter" data-target="25">0</h3>
+            <p>Projects</p>
+        </div>
+        <div class="stat glass">
+            <h3 class="counter" data-target="5">0</h3>
+            <p>Years Experience</p>
+        </div>
+        <div class="stat glass">
+            <h3 class="counter" data-target="1000">0</h3>
+            <p>Hours Coded</p>
+        </div>
+    </div>
+</section>
+
 <section id="contact" class="section contact">
     <div class="container">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:maaz18304@gmail.com">maaz18304@gmail.com</a></p>
         <p>Phone: <a href="tel:+923463631342">+92 346 3631342</a></p>
-        <p><a href="https://github.com/Maaz234Ali" target="_blank" rel="noopener">GitHub</a></p>
-        <p><a href="https://www.linkedin.com/in/maaz-ali-945897268/" target="_blank" rel="noopener">LinkedIn</a></p>
+        <div class="social-links">
+            <a href="https://github.com/Maaz234Ali" target="_blank" rel="noopener" class="btn"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/maaz-ali-945897268/" target="_blank" rel="noopener" class="btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+        <a href="#" class="btn">Download CV</a>
     </div>
 </section>
 
