@@ -1,619 +1,336 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Maaz Ali — Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maaz Ali | Portfolio</title>
 
-    <meta name="description" content="Maaz Ali — AI Developer, Data Scientist & Flutter Developer">
-    <meta name="keywords" content="AI, Machine Learning, Deep Learning, Flutter, Portfolio">
-    <meta name="author" content="Maaz Ali">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Animated background layers -->
+  <div class="bg-gradient"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-orbit orbit-1"></div>
+  <div class="bg-orbit orbit-2"></div>
 
-    <!-- Vendor CSS from Unfold template -->
-    <link rel="stylesheet" href="css/vendor/icomoon/style.css">
-    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/vendor/animate.min.css">
-    <link rel="stylesheet" href="css/vendor/aos.css">
-    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
-    
-    <!-- Theme Style (from Unfold template) -->
-    <link rel="stylesheet" href="css/style.css">
-
-  </head>
-  <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
-
-    <nav class="unslate_co--site-mobile-menu">
-      <div class="close-wrap d-flex">
-        <a href="#" class="d-flex ml-auto js-menu-toggle">
-          <span class="close-label">Close</span>
-          <div class="close-times">
-            <span class="bar1"></span>
-            <span class="bar2"></span>
-          </div>
-        </a>
+  <header>
+    <nav class="navbar">
+      <div class="nav-left">
+        <h2 class="logo">
+          <span class="logo-bracket">&lt;</span>
+          Maaz
+          <span class="logo-dot">.</span>
+          <span class="logo-bracket">/&gt;</span>
+        </h2>
+        <span class="nav-tagline">AI • ML • Flutter</span>
       </div>
-      <div class="site-mobile-inner"></div>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
     </nav>
+  </header>
 
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="overlay"></div>
 
-    <div class="unslate_co--site-wrap">
+      <div class="hero-inner">
+        <div class="hero-content" data-reveal="up">
+          <p class="hero-label">// welcome to my universe</p>
+          <h1>
+            Hi, I'm
+            <span class="hero-name">Maaz&nbsp;Ali</span>
+          </h1>
 
-      <div class="unslate_co--site-inner">
+          <h3 class="hero-roles">
+            <span class="code-tag">&lt;role&gt;</span>
+            <span class="typing" data-typing='["AI Developer","Data Scientist","Flutter Developer","ML Engineer"]'></span>
+            <span class="cursor"></span>
+            <span class="code-tag">&lt;/role&gt;</span>
+          </h3>
 
-        <div class="lines-wrap">
-          <div class="lines-inner">
-            <div class="lines"></div>
+          <p class="hero-text">
+            Building intelligent systems, AI models, and modern applications with a strong focus on clean code,
+            performance and delightful developer experience.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-terminal"></i>
+              View Projects
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              <i class="fas fa-paper-plane"></i>
+              Contact Me
+            </a>
           </div>
-        </div>
-        <!-- END lines -->
-      
-      <nav class="unslate_co--site-nav site-nav-target">
 
-        <div class="container">
-        
-          <div class="row align-items-center justify-content-between text-left">
-            <div class="col-md-5 text-right">
-              <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                <li class="has-children">
-                  <a href="#home-section" class="nav-link">Home</a>
-                  <ul class="dropdown">
-                    <li>
-                      <a href="index.html">Hero Image BG</a>
-                    </li>
-                    <li>
-                      <a href="index-video.html">Video BG</a>
-                    </li>
-                    <li>
-                      <a href="index-hero-slider.html">Hero Slider</a>
-                    </li>
-                    <li>
-                      <a href="index-sidebar-menu.html">Sidebar Menu</a>
-                    </li>
-                    <li>
-                      <a href="index-right-menu.html">Right Menu</a>
-                    </li>
-                  </ul>
-                </li>
-                <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
-                <li><a href="#about-section" class="nav-link">About</a></li>
-                <li><a href="#services-section" class="nav-link">Services</a></li>
-              </ul>
+          <div class="hero-meta">
+            <div class="meta-pill">
+              <span class="dot online"></span>
+              <span>Available for freelance &amp; remote roles</span>
             </div>
-            <div class="site-logo pos-absolute">
-              <a href="index.html" class="unslate_co--site-logo">Maaz<span>.</span></a>
-            </div>
-            <div class="col-md-5 text-right text-lg-left">
-              <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                <li><a href="#skills-section" class="nav-link">Skills</a></li>
-                <li><a href="#testimonial-section" class="nav-link">Testimonial</a></li>
-                <li><a href="#journal-section" class="nav-link">Journal</a></li>
-                <li><a href="#contact-section" class="nav-link">Contact</a></li>
-              </ul>
-
-              <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
-                <li><a href="#" class="js-menu-toggle">Menu</a></li>
-              </ul>
-
+            <div class="meta-pill">
+              <i class="fas fa-location-dot"></i>
+              <span>Based on Planet Code 🌌</span>
             </div>
           </div>
         </div>
 
-      </nav>
-      <!-- END nav -->
-
-      <div class="cover-v1 jarallax" style="background-image: url('images/cover_bg_2.jpg');" id="home-section">
-        <div class="container">
-          <div class="row align-items-center">
-              
-            <div class="col-md-7 mx-auto text-center">
-              <h1 class="heading gsap-reveal-hero">Maaz&nbsp;Ali</h1>
-              <h2 class="subheading gsap-reveal-hero">
-                I’m an AI Developer, Data Scientist &amp; Flutter Developer crafting intelligent digital experiences.
-              </h2>
+        <div class="hero-terminal" data-reveal="left">
+          <div class="terminal-header">
+            <div class="dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
             </div>
-
+            <span class="terminal-title">maaz@portfolio:~</span>
           </div>
-        </div>
-
-
-        <a href="#portfolio-section" class="mouse-wrap smoothscroll">
-          <span class="mouse">
-            <span class="scroll"></span>
-          </span>
-          <span class="mouse-label">Scroll</span>
-        </a>
-
-      </div>
-      <!-- END .cover-v1 -->
-
-
-      <div class="unslate_co--section" id="portfolio-section">
-        <div class="container">
-          
-          
-          <div class="relative"><div class="loader-portfolio-wrap"><div class="loader-portfolio"></div></div> </div>
-          <div id="portfolio-single-holder"></div>
-
-          <div class="portfolio-wrapper">
-
-            <div class="d-flex align-items-center mb-4 gsap-reveal gsap-reveal-filter">
-              <h2 class="mr-auto heading-h2"><span class="gsap-reveal">Portfolio</span></h2>
-            </div>
-
-            <div id="posts" class="row gutter-isotope-item">
-              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="portfolio-single-1.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="1">
-                    <div class="overlay">
-                      <span class="wrap-icon icon-link2"></span>
-                      <div class="portfolio-item-content">
-                        <h3>Medical Report AI Analyzer</h3>
-                        <p>AI, NLP</p>
-                      </div>
-                    </div>
-                    <img src="images/work_1_md.jpg" class="lazyload  img-fluid" alt="Medical Report AI Analyzer" />
-                  </a>
-              </div>
-              <div class="item branding packaging illustration col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
-                <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img" data-id="3">
-                    <div class="overlay">
-                      <span class="wrap-icon icon-link2"></span>
-                      <div class="portfolio-item-content">
-                        <h3>Street Fighter AI Bot</h3>
-                        <p>Reinforcement Learning</p>
-                      </div>
-                    </div>
-                    <img src="images/work_2_md.jpg" class="lazyload  img-fluid" alt="Street Fighter AI Bot" />
-                  </a>
-              </div>
-
-              <div class="item branding packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="portfolio-single-4.html" class="portfolio-item isotope-item gsap-reveal-img ajax-load-page" data-id="4">
-                    <div class="overlay">
-                      <span class="wrap-icon icon-link2"></span>
-                      <div class="portfolio-item-content">
-                        <h3>Flutter Medical App</h3>
-                        <p>Flutter, AI</p>
-                      </div>
-                    </div>
-                    <img src="images/work_3_md.jpg" class="lazyload  img-fluid" alt="Flutter Medical App" />
-                  </a>
-              </div>
-
-              <!-- You can customize or add more portfolio items here -->
-
-            </div>
-            
-          </div>
-
-
-        </div>
-      </div>
-
-
-      <div class="unslate_co--section">
-        <div class="container">
-          <div class="owl-carousel logo-slider">
-            <div class="logo-v1 gsap-reveal">
-              <img src="images/logo-google.png" alt="Image" class="img-fluid">
-            </div>
-            <div class="logo-v1 gsap-reveal">
-              <img src="images/logo-puma.png" alt="Image" class="img-fluid">
-            </div>
-            <div class="logo-v1 gsap-reveal">
-              <img src="images/logo-paypal.png" alt="Image" class="img-fluid">
-            </div>
-            <div class="logo-v1 gsap-reveal">
-              <img src="images/logo-adobe.png" alt="Image" class="img-fluid">
-            </div>
+          <div class="terminal-body">
+            <p><span class="terminal-prompt">$</span> whoami</p>
+            <p class="terminal-answer">AI Developer | Data Scientist | Flutter Enthusiast</p>
+            <p><span class="terminal-prompt">$</span> skills --top</p>
+            <p class="terminal-answer">Python · Machine Learning · Deep Learning · FastAPI · Flutter · GitHub</p>
+            <p><span class="terminal-prompt">$</span> status</p>
+            <p class="terminal-answer status-pill">shipping pixel-perfect intelligent experiences 🚀</p>
           </div>
         </div>
       </div>
+    </section>
 
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-header" data-reveal="up">
+        <p class="section-label">// about</p>
+        <h2 class="section-title">About Me</h2>
+      </div>
 
-      <div class="unslate_co--section" id="about-section">
-        <div class="container">
-          
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">About Me</span></h2>
-            <span class="gsap-reveal">
-            <img src="images/divider.png" alt="divider" width="76">
+      <div class="section-grid about-grid">
+        <div class="card card-glass" data-reveal="right">
+          <p class="about-text">
+            I am an AI developer passionate about building intelligent applications using machine learning and deep
+            learning.
+            I enjoy solving real-world problems with data, scalable backends and beautifully crafted interfaces.
+          </p>
+          <p class="about-text">
+            My work lives at the intersection of
+            <span class="highlight">AI research</span>,
+            <span class="highlight">developer tools</span> and
+            <span class="highlight">product design</span> — turning complex systems into simple, delightful experiences.
+          </p>
+        </div>
+
+        <div class="card card-stack" data-reveal="left">
+          <div class="stack-item">
+            <span class="stack-label">Current focus</span>
+            <span class="stack-value">AI systems · LLMs · Generative AI</span>
+          </div>
+          <div class="stack-item">
+            <span class="stack-label">Stack</span>
+            <span class="stack-value">Python, FastAPI, Flutter, TensorFlow / PyTorch</span>
+          </div>
+          <div class="stack-item">
+            <span class="stack-label">Mindset</span>
+            <span class="stack-value">ship fast, learn faster, keep it clean</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-header" data-reveal="up">
+        <p class="section-label">// skills</p>
+        <h2 class="section-title">Tech Arsenal</h2>
+      </div>
+
+      <div class="skills-container">
+        <div class="skill" data-reveal="scale">
+          <div class="skill-icon">
+            <i class="fab fa-python"></i>
+          </div>
+          <p>Python</p>
+        </div>
+
+        <div class="skill" data-reveal="scale">
+          <div class="skill-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <p>Machine Learning</p>
+        </div>
+
+        <div class="skill" data-reveal="scale">
+          <div class="skill-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <p>Deep Learning</p>
+        </div>
+
+        <div class="skill" data-reveal="scale">
+          <div class="skill-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <p>FastAPI</p>
+        </div>
+
+        <div class="skill" data-reveal="scale">
+          <div class="skill-icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <p>GitHub</p>
+        </div>
+
+        <div class="skill" data-reveal="scale">
+          <div class="skill-icon">
+            <i class="fas fa-mobile"></i>
+          </div>
+          <p>Flutter</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-header" data-reveal="up">
+        <p class="section-label">// projects</p>
+        <h2 class="section-title">Selected Work</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card" data-reveal="up">
+          <div class="project-badge">AI · NLP</div>
+          <div class="project-img-wrap">
+            <img src="https://picsum.photos/seed/medical-ai/400/250" class="project-img" alt="Medical AI Analyzer preview" />
+            <div class="project-glow"></div>
+          </div>
+          <h3>Medical Report AI Analyzer</h3>
+          <p>
+            AI system that extracts text from medical reports, understands clinical entities and generates
+            human-readable summaries to support doctors and patients.
+          </p>
+          <div class="project-meta">
+            <span>Python</span>
+            <span>Transformers</span>
+            <span>FastAPI</span>
+          </div>
+          <a href="#" class="project-btn">
+            <i class="fas fa-arrow-right"></i>
+            View details
+          </a>
+        </article>
+
+        <article class="project-card" data-reveal="up">
+          <div class="project-badge">Reinforcement Learning</div>
+          <div class="project-img-wrap">
+            <img src="https://picsum.photos/seed/street-fighter/401/250" class="project-img"
+              alt="Street Fighter AI Bot preview" />
+            <div class="project-glow"></div>
+          </div>
+          <h3>Street Fighter AI Bot</h3>
+          <p>
+            Neural network trained with reinforcement learning to play Street Fighter II, learning combos, timing and
+            strategies directly from game frames.
+          </p>
+          <div class="project-meta">
+            <span>PyTorch</span>
+            <span>RL</span>
+            <span>OpenAI Gym</span>
+          </div>
+          <a href="#" class="project-btn">
+            <i class="fas fa-arrow-right"></i>
+            View details
+          </a>
+        </article>
+
+        <article class="project-card" data-reveal="up">
+          <div class="project-badge">Flutter · AI</div>
+          <div class="project-img-wrap">
+            <img src="https://picsum.photos/seed/flutter-med/402/250" class="project-img"
+              alt="Flutter medical app preview" />
+            <div class="project-glow"></div>
+          </div>
+          <h3>Flutter Medical App</h3>
+          <p>
+            Cross-platform mobile app for medical report management with integrated AI-based summarization and secure
+            patient data handling.
+          </p>
+          <div class="project-meta">
+            <span>Flutter</span>
+            <span>Dart</span>
+            <span>REST APIs</span>
+          </div>
+          <a href="#" class="project-btn">
+            <i class="fas fa-arrow-right"></i>
+            View details
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-header" data-reveal="up">
+        <p class="section-label">// contact</p>
+        <h2 class="section-title">Let's Build Something</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="card card-glass" data-reveal="right">
+          <p class="contact-text">
+            Have an idea, a product, or a dataset you'd like to bring to life?
+            I'm always excited to collaborate on AI-powered products, tools and experiences.
+          </p>
+          <p class="contact-text">
+            Drop me a message and let's architect something remarkable together.
+          </p>
+        </div>
+
+        <div class="card contact-card" data-reveal="left">
+          <div class="social-icons">
+            <a href="#" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          <div class="contact-meta">
+            <span class="meta-pill">
+              <i class="fas fa-clock"></i>
+              <span>Responds within 24 hours</span>
             </span>
           </div>
-          
-
-          <div class="row mt-5 justify-content-between">
-            <div class="col-lg-7 mb-5 mb-lg-0">
-              <figure class="dotted-bg gsap-reveal-img ">
-                <img src="images/about_me_pic2.jpg" alt="Image" class="img-fluid">
-              </figure>
-            </div>
-            <div class="col-lg-4 pr-lg-5">
-              <h3 class="mb-4 heading-h3"><span class="gsap-reveal">We can build intelligent products together</span></h3>
-              <p class="lead gsap-reveal">
-                I’m Maaz Ali, an AI Developer and Data Scientist who loves turning raw data and ideas into AI-powered products.
-              </p>
-              <p class="mb-4 gsap-reveal">
-                From medical report analyzers to reinforcement learning game bots and Flutter apps, I enjoy designing and building
-                systems that feel smart, fast and delightful to use.
-              </p>
-              <p class="gsap-reveal"><a href="#" class="btn btn-outline-pill btn-custom-light">Download my CV</a></p>
-            </div>
-          </div>
         </div>
       </div>
+    </section>
+  </main>
 
-      <div class="unslate_co--section" id="services-section">
-        <div class="container">
+  <footer>
+    <p>© 2026 Maaz Ali · Crafted with clean code &amp; caffeine</p>
+  </footer>
 
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">My Services</span></h2>
-            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-          </div>
-
-          <div class="row gutter-v3">
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
-                <div class="wrap-icon mb-3">
-                  <img src="images/svg/001-options.svg" alt="Image" width="45">
-                </div>
-                <h3>AI &amp; ML <br> Solutions</h3>
-                <p>Designing and deploying machine learning and deep learning models tailored to real-world problems.</p>
-              </div> 
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
-                <div class="wrap-icon mb-3">
-                  <img src="images/svg/002-chat.svg" alt="Icon" width="45">
-                </div>
-                <h3>API &amp; Backend <br> Development</h3>
-                <p>Building clean, scalable APIs with FastAPI and Python to serve intelligent features to any frontend.</p>
-              </div> 
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">
-                <div class="wrap-icon mb-3">
-                  <img src="images/svg/003-contact-book.svg" alt="Image" class="img-fluid" width="45">
-                </div>
-                <h3>Mobile Apps <br> with Flutter</h3>
-                <p>Crafting modern cross‑platform mobile apps that integrate seamlessly with AI backends.</p>
-              </div> 
-            </div>
-
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
-                <div class="wrap-icon mb-3">
-                  <img src="images/svg/004-percentage.svg" alt="Image" width="45">
-                </div>
-                <h3>Data &amp; Analytics <br> Pipelines</h3>
-                <p>Designing data workflows that keep your models fed with clean, reliable, and up-to-date signals.</p>
-              </div> 
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
-                <div class="wrap-icon mb-3">
-                  <img src="images/svg/006-goal.svg" alt="Image" width="45">
-                </div>
-                <h3>ML Experimentation <br> &amp; Prototyping</h3>
-                <p>Quickly validating ideas with experiments, notebooks, and proof‑of‑concept implementations.</p>
-              </div> 
-            </div>
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">
-                <div class="wrap-icon mb-3">
-                  <img src="images/svg/005-line-chart.svg" alt="Image" width="45">
-                </div>
-                <h3>Technical <br> Consulting</h3>
-                <p>Helping you navigate AI &amp; data strategy, from architecture decisions to model choices.</p>
-              </div> 
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="unslate_co--section section-counter" id="skills-section">
-        <div class="container">
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">My Skills</span></h2>
-            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-          </div>
-
-
-          <div class="row pt-5">
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
-              <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="number number-counter" data-number="95">0</span>
-                  <span class="append-text">%</span>
-                </span>
-                <span class="counter-label">Python &amp; ML</span>
-              </div>
-            </div>
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-              <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="number number-counter" data-number="92">0</span>
-                  <span class="append-text">%</span>
-                </span>
-                <span class="counter-label">Deep Learning</span>
-              </div>
-            </div>
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-              <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="number number-counter" data-number="88">0</span>
-                  <span class="append-text">%</span>
-                </span>
-                <span class="counter-label">FastAPI &amp; Backends</span>
-              </div>
-            </div>
-            <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-              <div class="counter-v1 text-center">
-                <span class="number-wrap">
-                  <span class="number number-counter" data-number="90">0</span>
-                  <span class="append-text">%</span>
-                </span>
-                <span class="counter-label">Flutter</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- END .counter -->
-
-      <div class="unslate_co--section" id="testimonial-section">
-        <div class="container">
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">My Happy Clients</span></h2>
-            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-          </div>
-        </div>
-
-        <div class="owl-carousel testimonial-slider" data-aos="fade-up">
-          <div>
-            <div class="testimonial-v1">
-              <div class="testimonial-inner-bg">
-                <span class="quote">&ldquo;</span>
-                <blockquote>
-                  Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
-                </blockquote>
-              </div>
-              
-              <div class="testimonial-author-info">
-                <img src="images/person_man_1.jpg" alt="Image">
-                <h3>Client Name</h3>
-                <span class="d-block position">Role / Company</span>
-              </div>
-
-            </div>
-          </div>
-          <div>
-            <div class="testimonial-v1">
-              <div class="testimonial-inner-bg">
-                <span class="quote">&ldquo;</span>
-                <blockquote>
-                  A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-                </blockquote>
-              </div>
-              
-              <div class="testimonial-author-info">
-                <img src="images/person_man_2.jpg" alt="Image">
-                <h3>Client Name</h3>
-                <span class="d-block position">Role / Company</span>
-              </div>
-
-            </div>
-          </div>
-          <div>
-            <div class="testimonial-v1">
-              <div class="testimonial-inner-bg">
-                <span class="quote">&ldquo;</span>
-                <blockquote>
-                  Use this section to highlight what people say about your AI projects, work ethic, and collaboration style.
-                </blockquote>
-              </div>
-              
-              <div class="testimonial-author-info">
-                <img src="images/person_woman_1.jpg" alt="Image">
-                <h3>Client Name</h3>
-                <span class="d-block position">Role / Company</span>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <!-- END testimonial -->
-
-      <div class="unslate_co--section" id="journal-section">
-        <div class="container">
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">My Journal</span></h2>
-            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-          </div>
-
-          <!-- You can later replace these with your own blog posts or remove this section -->
-          <div class="row gutter-v4 align-items-stretch">
-            <div class="col-sm-6 col-md-6 col-lg-8 blog-post-entry" data-aos="fade-up" data-aos-delay="0">
-
-              <a href="blog-single.html" class="grid-item blog-item w-100 h-100">
-                <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>Building Intelligent Systems</h3>
-                    <p class="post-meta">By Maaz <span class="small">&bullet;</span> 5 mins read</p>
-                  </div>
-                </div>
-                <img src="images/post_1.jpg" class="lazyload" alt="Image" />
-              </a>
-
-
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-4 blog-post-entry" data-aos="fade-up" data-aos-delay="100">
-              <a href="blog-single.html" class="grid-item blog-item w-100 h-100">
-                <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>From Data to Insights</h3>
-                    <p class="post-meta">By Maaz <span class="small">&bullet;</span> 5 mins read</p>
-                  </div>
-                </div>
-                <img src="images/post_2.jpg" class="lazyload" alt="Image" />
-              </a>
-            </div>
-
-
-            <div class="col-sm-6 col-md-6 col-lg-4 blog-post-entry" data-aos="fade-up" data-aos-delay="0">
-
-              <a href="blog-single.html" class="grid-item blog-item w-100 h-100">
-                <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>Designing AI Products</h3>
-                    <p class="post-meta">By Maaz <span class="small">&bullet;</span> 5 mins read</p>
-                  </div>
-                </div>
-                <img src="images/post_3.jpg" class="lazyload" alt="Image" />
-              </a>
-
-
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-4 blog-post-entry" data-aos="fade-up" data-aos-delay="100">
-              <a href="blog-single.html" class="grid-item blog-item w-100 h-100">
-                <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>Flutter + AI</h3>
-                    <p class="post-meta">By Maaz <span class="small">&bullet;</span> 5 mins read</p>
-                  </div>
-                </div>
-                <img src="images/post_4.jpg" class="lazyload" alt="Image" />
-              </a>
-            </div>
-
-            <div class="col-sm-6 col-md-6 col-lg-4 blog-post-entry" data-aos="fade-up" data-aos-delay="200">
-              <a href="blog-single.html" class="grid-item blog-item w-100 h-100">
-                <div class="overlay">
-                  <div class="portfolio-item-content">
-                    <h3>Shipping ML to Production</h3>
-                    <p class="post-meta">By Maaz <span class="small">&bullet;</span> 5 mins read</p>
-                  </div>
-                </div>
-                <img src="images/post_5.jpg" class="lazyload" alt="Image" />
-              </a>
-            </div>
-
-
-          </div>
-
-        </div>
-      </div>
-      <!-- END blog posts -->
-
-
-      <div class="unslate_co--section" id="contact-section">
-        <div class="container">
-          <div class="section-heading-wrap text-center mb-5">
-            <h2 class="heading-h2 text-center divider"><span class="gsap-reveal">Get In Touch</span></h2>
-            <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
-          </div>
-
-
-          <div class="row justify-content-between">
-            
-            <div class="col-md-6">
-              <form method="post" class="form-outline-style-v1" id="contactForm">
-                <div class="form-group row mb-0">
-
-                  <div class="col-lg-6 form-group gsap-reveal">
-                    <label for="name">Name</label>
-                    <input name="name" type="text" class="form-control" id="name">
-                  </div>
-                  <div class="col-lg-6 form-group gsap-reveal">
-                    <label for="email">Email</label>
-                    <input name="email" type="email" class="form-control" id="email">
-                  </div>
-                  <div class="col-lg-12 form-group gsap-reveal">
-                    <label for="message">Write your message...</label>
-                    <textarea name="message" id="message" cols="30" rows="7" class="form-control"></textarea>
-                  </div>
-                </div>
-                <div class="form-group row gsap-reveal">
-                    <div class="col-md-12 d-flex align-items-center">
-                      <input type="submit" class="btn btn-outline-pill btn-custom-light mr-3" value="Send Message">
-                      <span class="submitting"></span>
-                    </div>
-                  </div>
-              </form>
-              <div id="form-message-warning" class="mt-4"></div> 
-              <div id="form-message-success">
-                Your message was sent, thank you!
-              </div>
-
-            </div>
-
-            <div class="col-md-4">
-              <div class="contact-info-v1">
-                <div class="gsap-reveal d-block">
-                  <span class="d-block contact-info-label">Email</span>
-                  <a href="#" class="contact-info-val">info@yourdomain.com</a>
-                </div>
-                <div class="gsap-reveal d-block">
-                  <span class="d-block contact-info-label">Phone</span>
-                  <a href="#" class="contact-info-val">+12 345 6789 012</a>
-                </div>
-                <div class="gsap-reveal d-block">
-                  <span class="d-block contact-info-label">Address</span>
-                  <address class="contact-info-val">273 South Riverview Rd. <br> New York, NY 10011</address>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      </div> <!-- END .unslate_co-site-inner -->
-
-      <footer class="unslate_co--footer unslate_co--section">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-7">
-              
-              <div class="footer-site-logo"><a href="#">Maaz<span>.</span></a></div>
-
-              <ul class="footer-site-social">
-                <li><a href="#">GitHub</a></li>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">Twitter</a></li>
-              </ul>
-
-              <p class="site-copyright">
-                
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;
-                <script>
-                  document.write(new Date().getFullYear());
-                </script> All rights reserved | This template is based on Unfold by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              
-              </p>
-
-            </div>
-          </div>
-        </div>
-      </footer>
-
-      
-    </div>
-
-    
-    <!-- Loader -->
-    <div id="unslate_co--overlayer"></div>
-    <div class="site-loader-wrap">
-      <div class="site-loader"></div>
-    </div>
-
-    <!-- JS bundles from Unfold template -->
-    <script src="js/scripts-dist.js"></script>
-    <script src="js/main.js"></script>
-
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
+
