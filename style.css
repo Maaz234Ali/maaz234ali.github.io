@@ -20,6 +20,19 @@ body {
 }
 
 /* Background layers */
+.bg-photo {
+  position: fixed;
+  inset: 0;
+  background-image: url("your-photo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.08;
+  filter: grayscale(8%);
+  z-index: -4;
+  pointer-events: none;
+}
+
 .bg-gradient {
   position: fixed;
   inset: 0;
