@@ -23,7 +23,7 @@ body {
 .bg-photo {
   position: fixed;
   inset: 0;
-  background-image: url("your-photo.jpg");
+  background-image: url("maaz.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
