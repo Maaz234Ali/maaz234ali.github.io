@@ -25,9 +25,9 @@ body {
   inset: 0;
   background-image: url("maaz.png");
   background-size: cover;
-  background-position: center;
+  background-position: center 25%;  /* move image a bit lower */
   background-repeat: no-repeat;
-  opacity: 0.08;
+  opacity: 0.15;                    /* whatever opacity you liked */
   filter: grayscale(8%);
   z-index: -4;
   pointer-events: none;
